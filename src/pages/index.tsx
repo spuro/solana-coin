@@ -57,7 +57,7 @@ export default function Home() {
           name="description"
           content="$SOLANA - BarbieCrashBandicootRFK888Inu"
         />
-        <link rel="icon" href="/images/solanaLogoMark.svg" />
+        <link rel="icon" href="/images/logo.jpg" />
       </Head>
       <main className="text-white" style={{ fontFamily: "serif" }}>
         <div className="flex min-h-screen flex-col items-center justify-center lg:grid lg:grid-cols-[0.25fr_1fr_0.25fr]">
