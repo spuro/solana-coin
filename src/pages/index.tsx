@@ -52,10 +52,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>$SOLANA - CrashBandicootSBFCuck103Pepe</title>
+        <title>$SOLANA - BarbieCrashBandicootRFK888Inu</title>
         <meta
           name="description"
-          content="SOLANA - CrashBandicootSBFCuck103Pepe"
+          content="$SOLANA - BarbieCrashBandicootRFK888Inu"
         />
         <link rel="icon" href="/images/solanaLogoMark.svg" />
       </Head>
@@ -80,6 +80,12 @@ export default function Home() {
               className="mb-4"
             />
             <div className="flex flex-col items-center gap-16">
+              <h1 className="bg-gradient-to-r from-red-500 to-blue-500 font-mono text-4xl font-bold shadow-lg shadow-green-300 hover:mix-blend-overlay">
+                BarbieCrashBandicootRFK888Inu
+              </h1>
+              <h3 className="bg-gradient-to-bl from-fuchsia-400 to-green-800 text-lg font-bold shadow-2xl shadow-red-200 hover:mix-blend-overlay">
+                the ticker is $SOLANA
+              </h3>
               <InfoHeader />
               <Image
                 src={"/images/logo.jpg"}
