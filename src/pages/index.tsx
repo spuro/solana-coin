@@ -80,7 +80,7 @@ export default function Home() {
               className="mb-4"
             />
             <div className="flex flex-col items-center gap-16">
-              <h1 className="bg-gradient-to-r from-red-500 to-blue-500 font-mono text-4xl font-bold shadow-lg shadow-green-300 hover:mix-blend-overlay">
+              <h1 className="max-w-full bg-gradient-to-r from-red-500 to-blue-500 font-mono text-lg font-bold shadow-lg shadow-green-300 hover:mix-blend-overlay md:text-4xl">
                 BarbieCrashBandicootRFK888Inu
               </h1>
               <h3 className="bg-gradient-to-bl from-fuchsia-400 to-green-800 text-lg font-bold shadow-2xl shadow-red-200 hover:mix-blend-overlay">
