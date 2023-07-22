@@ -23,8 +23,8 @@ export const InfoHeader = () => {
         <InfoPair label="SUPPLY" value="69,000,000" />
         <InfoPair label="LP?" value="IDK LOL" />
       </div>
-      <div className="flex flex-col items-center justify-center">
-        <p className="">Links:</p>
+      <div className="flex flex-col items-center justify-center bg-rose-200">
+        <p className="mt-4 font-sans text-black">waow clicky button</p>
         <div className="flex flex-row items-center justify-center gap-4">
           <a href={links.links.telegramLink} target="_blank" rel="noreferrer">
             <Image

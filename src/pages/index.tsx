@@ -95,6 +95,13 @@ export default function Home() {
               />
               <Confession />
               <Interview />
+              <Image
+                src={"/images/applecat.gif"}
+                width={250}
+                height={250}
+                alt="apple cat"
+                className="hover:animate-spin"
+              />
             </div>
           </div>
           <Sidebar />
