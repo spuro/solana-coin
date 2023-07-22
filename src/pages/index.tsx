@@ -4,15 +4,20 @@ import { useEffect, useState } from "react";
 // external components
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 // my components
 import { Sidebar } from "~/components/sidebar";
 import { InfoHeader } from "~/components/InfoHeader";
+import { Interview } from "~/components/Interview";
+import { Confession } from "~/components/Confession";
 
 const solanaPurple = "#9945FF";
 const solanaGreen = "#14F195";
 
 type measurement = number | undefined;
+
+import { links, type Links, type Details } from "../details.ts";
 
 export default function Home() {
   useEffect(() => {}, []);
@@ -62,18 +67,39 @@ export default function Home() {
         />
         <link rel="icon" href="/images/solanaLogoMark.svg" />
       </Head>
-      <main>
+      <main className="text-white" style={{ fontFamily: "serif" }}>
         <div className="flex min-h-screen flex-col items-center justify-center lg:grid lg:grid-cols-[0.25fr_1fr_0.25fr]">
-          {/* {useWindowSize().width! > 1024 ? <Sidebar /> : ""} */}
           <Sidebar />
           <div
-            className={`flex h-[5000px] w-full flex-col border-4 border-[#14F195] bg-[#150924] p-4 lg:p-16 xl:p-32`}
+            style={{
+              borderImage:
+                "linear-gradient(90deg, rgba(252,159,203,1) 0%, rgba(248,176,73,1) 13%, rgba(248,176,73,1) 21%, rgba(254,231,242,1) 63%, rgba(249,82,160,1) 67%, rgba(197,8,73,1) 69%, rgba(180,62,133,1) 82%, rgba(248,176,73,1) 100%) 180 / 20px",
+              background:
+                "linear-gradient(90deg, #0e5a3a, #150924), linear-gradient(0deg, rgba(252,159,203,0.2) 0%, rgba(248,176,73,0.2) 13%, rgba(248,176,73,0.2) 21%, rgba(254,231,242,0.2) 63%, rgba(249,82,160,0.2) 67%, rgba(197,8,73,0.2) 69%, rgba(180,62,133,0.2) 82%, rgba(248,176,73,0.2) 100%)",
+              backgroundBlendMode: "overlay",
+            }}
+            className={`flex w-full flex-col p-4 lg:p-4 xl:p-4`}
           >
-            <InfoHeader />
-            <p>middle</p>
+            <Image
+              src={"/images/banner.jpg"}
+              alt="banner"
+              width={1024}
+              height={400}
+              className="mb-4"
+            />
+            <div className="flex flex-col items-center gap-16">
+              <InfoHeader />
+              <Image
+                src={"/images/logo.jpg"}
+                width={250}
+                height={250}
+                alt="logo"
+              />
+              <Confession />
+              <Interview />
+            </div>
           </div>
           <Sidebar />
-          {/* {useWindowSize().width! > 1024 ? <Sidebar /> : ""} */}
         </div>
       </main>
     </>
