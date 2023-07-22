@@ -1,9 +1,8 @@
 // external deps
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 // external components
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 
 // my components
@@ -12,50 +11,43 @@ import { InfoHeader } from "~/components/InfoHeader";
 import { Interview } from "~/components/Interview";
 import { Confession } from "~/components/Confession";
 
-const solanaPurple = "#9945FF";
-const solanaGreen = "#14F195";
-
 type measurement = number | undefined;
 
-import { links, type Links, type Details } from "../details.ts";
-
 export default function Home() {
-  useEffect(() => {}, []);
-
   // Hook
-  function useWindowSize() {
-    // Initialize state with undefined width/height so server and client renders match
-    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-    const [windowSize, setWindowSize] = useState<{
-      width: measurement;
-      height: measurement;
-    }>({
-      width: undefined,
-      height: undefined,
-    });
+  // function useWindowSize() {
+  //   // Initialize state with undefined width/height so server and client renders match
+  //   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  //   const [windowSize, setWindowSize] = useState<{
+  //     width: measurement;
+  //     height: measurement;
+  //   }>({
+  //     width: undefined,
+  //     height: undefined,
+  //   });
 
-    useEffect(() => {
-      // only execute all the code below in client side
-      // Handler to call on window resize
-      function handleResize() {
-        // Set window width/height to state
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }
+  //   useEffect(() => {
+  //     // only execute all the code below in client side
+  //     // Handler to call on window resize
+  //     function handleResize() {
+  //       // Set window width/height to state
+  //       setWindowSize({
+  //         width: window.innerWidth,
+  //         height: window.innerHeight,
+  //       });
+  //     }
 
-      // Add event listener
-      window.addEventListener("resize", handleResize);
+  //     // Add event listener
+  //     window.addEventListener("resize", handleResize);
 
-      // Call handler right away so state gets updated with initial window size
-      handleResize();
+  //     // Call handler right away so state gets updated with initial window size
+  //     handleResize();
 
-      // Remove event listener on cleanup
-      return () => window.removeEventListener("resize", handleResize);
-    }, []); // Empty array ensures that effect is only run on mount
-    return windowSize;
-  }
+  //     // Remove event listener on cleanup
+  //     return () => window.removeEventListener("resize", handleResize);
+  //   }, []); // Empty array ensures that effect is only run on mount
+  //   return windowSize;
+  // }
 
   return (
     <>

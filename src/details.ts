@@ -1,4 +1,4 @@
-export type Links = {
+export interface Links {
   dexScreenerLink: string;
   coinMarketCapLink: string;
   coinGeckoLink: string;
@@ -6,10 +6,11 @@ export type Links = {
   dexToolsLink: string;
   twitterLink: string;
   telegramLink: string;
-};
-export type Details = {
+  uniswapLink: string;
+}
+export interface Details {
   links: Links;
-};
+}
 
 export const links = {
   links: {
@@ -20,5 +21,6 @@ export const links = {
     dexToolsLink: "",
     twitterLink: "",
     telegramLink: "",
+    uniswapLink: "",
   },
 };

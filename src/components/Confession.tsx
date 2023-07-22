@@ -6,7 +6,7 @@ export const Confession = () => {
       <h3 className="text-center text-3xl font-bold underline">
         What is an underdog?
       </h3>
-      <p className="text-center font-semibold">I'll tell you what.</p>
+      <p className="text-center font-semibold">I&apos;ll tell you what.</p>
       <p className="px-8 md:px-16 lg:px-32">
         <br /> An undervalued horse in a race, a david versus goliath, a cent to
         a dollar, a means to an end. <br />A vessel to transport you from the
