@@ -45,7 +45,10 @@ const Gallery = () => {
       </h2>
       <p className="pl-16">
         submit your trash by{" "}
-        <a href="" className="text-red-300 hover:text-red-600">
+        <a
+          href="https://twitter.com/ManletRevenge"
+          className="text-red-300 hover:text-red-600"
+        >
           tagging us on twitter
         </a>{" "}
         with your meme
