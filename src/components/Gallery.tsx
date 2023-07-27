@@ -53,12 +53,14 @@ const Gallery = () => {
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
         {images.map((image, index) => (
           <div className="h-max w-full" key={index}>
-            <Image
-              src={`/images/gallery/${image.fileName}`}
-              alt={`${image.fileName} by ${image.author}`}
-              width={500}
-              height={500}
-            />
+            <a href={`/images/gallery/${image.fileName}`} target="_blank">
+              <Image
+                src={`/images/gallery/${image.fileName}`}
+                alt={`${image.fileName} by ${image.author}`}
+                width={500}
+                height={500}
+              />
+            </a>
           </div>
         ))}
       </div>
