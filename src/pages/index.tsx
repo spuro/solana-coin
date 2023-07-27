@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 // external components
 import Head from "next/head";
 import Image from "next/image";
+import localFont from "next/font/local";
 
 // my components
 import { Sidebar } from "~/components/sidebar";
@@ -11,6 +12,8 @@ import { InfoHeader } from "~/components/InfoHeader";
 import { Interview } from "~/components/Interview";
 import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
+
+const kabelFont = localFont({ src: "../../src/fonts/kabel_norm.ttf" });
 
 type measurement = number | undefined;
 
@@ -78,7 +81,7 @@ export default function Home() {
       <main className="text-white" style={{ fontFamily: "serif" }}>
         <button
           onClick={muteMusic}
-          className="fixed bottom-4 left-4 z-20 rounded-full border-2 bg-teal-200 p-4 text-black"
+          className="fixed bottom-4 left-4 z-20 rounded-full border-2 bg-teal-500 p-4 text-black"
         >
           🔈
         </button>
@@ -86,7 +89,7 @@ export default function Home() {
           onClick={() => {
             musicRef.current ? void musicRef.current.play() : null;
           }}
-          className="fixed bottom-4 right-4 z-20 rounded-full border-2 bg-orange-200 p-4 text-black"
+          className="fixed bottom-4 right-4 z-20 rounded-full border-2 bg-orange-500 p-4 text-black"
         >
           🎵
         </button>
@@ -111,7 +114,9 @@ export default function Home() {
               className="mb-4"
             />
             <div className="flex flex-col items-center gap-16">
-              <h1 className="max-w-full bg-gradient-to-r from-red-500 to-blue-500 font-mono text-lg font-bold shadow-lg shadow-green-300 hover:mix-blend-overlay md:text-4xl">
+              <h1
+                className={`max-w-full bg-gradient-to-r from-red-500 to-blue-500 font-mono text-lg font-bold shadow-lg shadow-green-300 hover:mix-blend-overlay md:text-4xl ${kabelFont.className}`}
+              >
                 BarbieCrashBandicootRFK888Inu
               </h1>
               <h3 className="bg-gradient-to-bl from-fuchsia-400 to-green-800 text-lg font-bold shadow-2xl shadow-red-200 hover:mix-blend-overlay">
