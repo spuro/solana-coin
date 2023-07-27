@@ -21,7 +21,7 @@ export const InfoHeader = () => {
         <InfoPair label="TICKER" value="$SOLANA" />
         <InfoPair
           label="CONTRACT"
-          value="0xbeA2cac5C35A738D72f8C9667C99De69A99D2FDB"
+          value="0x3D806324b6Df5AF3c1a81aCbA14A8A62Fe6D643F"
         />
         <InfoPair label="SUPPLY" value="888,888,888,888,888" />
         <InfoPair label="LP?" value="IDK LOL" />
