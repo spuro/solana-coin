@@ -1,5 +1,5 @@
 // external deps
-// import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 // external components
 import Head from "next/head";
@@ -15,6 +15,21 @@ import Gallery from "~/components/Gallery";
 type measurement = number | undefined;
 
 export default function Home() {
+  const musicRef = useRef<HTMLAudioElement>(null);
+
+  const muteMusic = () => {
+    if (musicRef.current) {
+      musicRef.current.muted = !musicRef.current.muted;
+    }
+  };
+
+  useEffect(() => {
+    if (musicRef.current) {
+      musicRef.current.volume = 0.25;
+      void musicRef.current.play();
+    }
+  }, []);
+
   // Hook
   // function useWindowSize() {
   //   // Initialize state with undefined width/height so server and client renders match
@@ -61,6 +76,21 @@ export default function Home() {
         <link rel="icon" href="/images/logo.jpg" />
       </Head>
       <main className="text-white" style={{ fontFamily: "serif" }}>
+        <button
+          onClick={muteMusic}
+          className="fixed bottom-4 left-4 z-20 rounded-full border-2 bg-teal-200 p-4 text-black"
+        >
+          🔈
+        </button>
+        <button
+          onClick={() => {
+            musicRef.current ? void musicRef.current.play() : null;
+          }}
+          className="fixed bottom-4 right-4 z-20 rounded-full border-2 bg-orange-200 p-4 text-black"
+        >
+          🎵
+        </button>
+        <audio src={"/crash.mp3"} autoPlay loop ref={musicRef} />
         <div className="flex min-h-screen flex-col items-center justify-center lg:grid lg:grid-cols-[0.25fr_1fr_0.25fr]">
           <Sidebar />
           <div
