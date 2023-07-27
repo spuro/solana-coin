@@ -19,8 +19,11 @@ export const InfoHeader = () => {
     <div className="flex flex-col">
       <div className="grid grid-cols-1 grid-rows-4 items-center justify-center gap-2 lg:grid-cols-2 lg:grid-rows-2">
         <InfoPair label="TICKER" value="$SOLANA" />
-        <InfoPair label="CONTRACT" value="0x1234567890987654321234567890" />
-        <InfoPair label="SUPPLY" value="69,000,000" />
+        <InfoPair
+          label="CONTRACT"
+          value="0xbeA2cac5C35A738D72f8C9667C99De69A99D2FDB"
+        />
+        <InfoPair label="SUPPLY" value="888,888,888,888,888" />
         <InfoPair label="LP?" value="IDK LOL" />
       </div>
       <div className="flex flex-col items-center justify-center border-2 bg-fuchsia-500">

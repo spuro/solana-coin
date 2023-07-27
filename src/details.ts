@@ -17,10 +17,11 @@ export const links = {
     dexScreenerLink: "",
     coinMarketCapLink: "",
     coinGeckoLink: "",
-    etherscanLink: "",
+    etherscanLink:
+      "https://etherscan.io/address/0x3d806324b6df5af3c1a81acba14a8a62fe6d643f",
     dexToolsLink: "",
-    twitterLink: "",
-    telegramLink: "",
+    twitterLink: "https://twitter.com/ManletRevenge",
+    telegramLink: "https://t.me/SOLANAPORTALRFK",
     uniswapLink: "",
   },
 };
