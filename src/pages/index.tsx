@@ -10,6 +10,7 @@ import { Sidebar } from "~/components/sidebar";
 import { InfoHeader } from "~/components/InfoHeader";
 import { Interview } from "~/components/Interview";
 import { Confession } from "~/components/Confession";
+import Gallery from "~/components/Gallery";
 
 type measurement = number | undefined;
 
@@ -92,6 +93,7 @@ export default function Home() {
                 width={250}
                 height={250}
                 alt="logo"
+                className="border-8 border-red-950 hover:animate-spin"
               />
               <Confession />
               <Interview />
@@ -103,6 +105,7 @@ export default function Home() {
                 className="hover:animate-spin"
               />
             </div>
+            <Gallery />
           </div>
           <Sidebar />
         </div>
@@ -110,3 +113,9 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  return {
+    props: {},
+  };
+};
