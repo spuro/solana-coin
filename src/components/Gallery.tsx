@@ -1,8 +1,10 @@
-export type Meme = {
+import Image from "next/image";
+
+export interface Meme {
   author: string;
   credit?: string;
   fileName: string;
-};
+}
 
 const images: Meme[] = [
   {
@@ -50,11 +52,14 @@ const Gallery = () => {
       </p>
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
         {images.map((image, index) => (
-          <img
-            src={`/images/gallery/${image.fileName}`}
-            alt={`${image.fileName} by ${image.author}`}
-            key={index}
-          />
+          <div className="h-max w-full" key={index}>
+            <Image
+              src={`/images/gallery/${image.fileName}`}
+              alt={`${image.fileName} by ${image.author}`}
+              width={500}
+              height={500}
+            />
+          </div>
         ))}
       </div>
     </div>
