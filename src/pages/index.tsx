@@ -131,16 +131,16 @@ export default function Home() {
                 className="border-8 border-red-950 hover:animate-spin"
               />
               <Confession />
+              <Gallery />
               <Interview />
-              <Image
+              {/* <Image
                 src={"/images/applecat.gif"}
-                width={250}
-                height={250}
+                width={100}
+                height={100}
                 alt="apple cat"
                 className="hover:animate-spin"
-              />
+              /> */}
             </div>
-            <Gallery />
           </div>
           <Sidebar />
         </div>

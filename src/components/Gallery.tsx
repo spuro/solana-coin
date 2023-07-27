@@ -39,7 +39,7 @@ const images: Meme[] = [
 
 const Gallery = () => {
   return (
-    <div className="w-full py-16">
+    <div className="w-full">
       <h2 className="border-4 border-orange-500 bg-teal-900 text-center text-xl md:text-5xl">
         meme <span className="italic">Gallery</span>
       </h2>
