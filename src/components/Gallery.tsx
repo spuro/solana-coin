@@ -46,7 +46,7 @@ const Gallery = () => {
       <p className="pl-16">
         submit your trash by{" "}
         <a
-          href="https://twitter.com/ManletRevenge"
+          href="https://twitter.com/tickerSOL"
           className="text-red-300 hover:text-red-600"
         >
           tagging us on twitter
