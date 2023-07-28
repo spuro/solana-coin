@@ -35,6 +35,11 @@ const images: Meme[] = [
     author: "admin",
     fileName: "wojak.jpg",
   },
+  {
+    author: "@GrahamKeithC",
+    fileName: "GrahamKeithC_banner.jpeg",
+    credit: "https://twitter.com/GrahamKeithC/status/1684835373363396608?s=20",
+  },
 ];
 
 const Gallery = () => {
@@ -53,17 +58,42 @@ const Gallery = () => {
         </a>{" "}
         with your meme
       </p>
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 ">
         {images.map((image, index) => (
-          <div className="h-max w-full" key={index}>
-            <a href={`/images/gallery/${image.fileName}`} target="_blank">
-              <Image
-                src={`/images/gallery/${image.fileName}`}
-                alt={`${image.fileName} by ${image.author}`}
-                width={500}
-                height={500}
-              />
-            </a>
+          <div
+            className="relative aspect-square h-max w-full hover:z-50"
+            key={index}
+          >
+            <Image
+              src={`/images/gallery/${image.fileName}`}
+              alt={`${image.fileName} by ${image.author}`}
+              width={500}
+              height={500}
+              className="absolute left-0 top-0"
+            />
+            <div className="relative z-30 flex h-full w-full flex-col justify-between bg-black/80 p-4 opacity-0 hover:opacity-100">
+              <p>{image.fileName}</p>
+              <div className="space flex flex-col gap-2 bg-black/80">
+                <a
+                  href={`/images/gallery/${image.fileName}`}
+                  target="_blank"
+                  className="hover:text-red-500 hover:underline"
+                >
+                  download
+                </a>
+                {image.credit ? (
+                  <a
+                    href={image.credit ? image.credit : ""}
+                    target="_blank"
+                    className="hover:text-red-500 hover:underline"
+                  >
+                    source
+                  </a>
+                ) : (
+                  ""
+                )}
+              </div>
+            </div>
           </div>
         ))}
       </div>
