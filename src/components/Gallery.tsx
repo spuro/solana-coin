@@ -45,6 +45,14 @@ const images: Meme[] = [
     fileName: "@Ch3l__movieposter.jpeg",
     credit: "https://twitter.com/Ch3l__/status/1685050589586051072?s=20",
   },
+  {
+    author: "admin",
+    fileName: "donBandicoot.jpeg",
+  },
+  {
+    author: "admin",
+    fileName: "rabbit.jpeg",
+  },
 ];
 
 const Gallery = () => {
