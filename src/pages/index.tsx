@@ -134,7 +134,7 @@ export default function Home() {
               <Confession />
               <Gallery />
               <Interview />
-              <WidgetCentre />
+              {/* <WidgetCentre /> */}
               {/* <Image
                 src={"/images/applecat.gif"}
                 width={100}
