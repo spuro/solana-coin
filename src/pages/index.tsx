@@ -12,6 +12,7 @@ import { InfoHeader } from "~/components/InfoHeader";
 import { Interview } from "~/components/Interview";
 import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
+import WidgetCentre from "~/components/WidgetCentre";
 
 const kabelFont = localFont({ src: "../../src/fonts/kabel_norm.ttf" });
 
@@ -133,6 +134,7 @@ export default function Home() {
               <Confession />
               <Gallery />
               <Interview />
+              <WidgetCentre />
               {/* <Image
                 src={"/images/applecat.gif"}
                 width={100}
