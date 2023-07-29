@@ -1,12 +1,23 @@
+import { useRef } from "react";
+
 interface InfoPairProps {
   label: string;
   value: string;
+  link?: string;
 }
-const InfoPair = ({ label, value }: InfoPairProps) => {
+const InfoPair = ({ label, value, link }: InfoPairProps) => {
   return (
     <div className="flex flex-col items-center gap-0 rounded-md bg-black/80  px-8 py-4">
       <p className="text-sm font-light">{label}</p>
-      <p className="text-lg font-semibold">{value}</p>
+      {link ? (
+        <a href={link} target="_blank" rel="noreferrer" className="">
+          <p className="cursor-pointer text-lg font-semibold underline hover:text-red-500">
+            {value}
+          </p>
+        </a>
+      ) : (
+        <p className="text-lg font-semibold">{value}</p>
+      )}
     </div>
   );
 };
@@ -15,16 +26,48 @@ import Image from "next/image";
 import { links, type Links, type Details } from "../details.ts";
 import { DexScreenerLogo } from "./DexScreenerLogo.tsx";
 export const InfoHeader = () => {
+  const copyPopup = useRef<HTMLDivElement>(null);
+
   return (
     <div className="flex flex-col">
       <div className="grid grid-cols-1 grid-rows-4 items-center justify-center gap-2 lg:grid-cols-2 lg:grid-rows-2">
         <InfoPair label="TICKER" value="$SOLANA" />
+        <div
+          onClick={() => {
+            void navigator.clipboard.writeText(
+              "0x3D806324b6Df5AF3c1a81aCbA14A8A62Fe6D643F"
+            );
+            copyPopup.current?.classList.remove("hidden");
+            setTimeout(() => {
+              copyPopup.current?.classList.add("hidden");
+            }, 2000);
+            return;
+          }}
+          className="relative"
+        >
+          <div
+            ref={copyPopup}
+            className="absolute flex hidden h-full w-full items-center justify-center rounded-lg bg-red-600/80"
+          >
+            copied!
+          </div>
+          <InfoPair
+            label="CONTRACT"
+            value="0x3D806324b6Df5AF3c1a81aCbA14A8A62Fe6D643F"
+          />
+        </div>
         <InfoPair
-          label="CONTRACT"
-          value="0x3D806324b6Df5AF3c1a81aCbA14A8A62Fe6D643F"
+          label="SUPPLY"
+          value="888,888,888,888,888"
+          link={links.links.etherscanLink}
         />
-        <InfoPair label="SUPPLY" value="888,888,888,888,888" />
-        <InfoPair label="LP?" value="IDK LOL" />
+        <InfoPair
+          label="LP?"
+          value="LOCKED"
+          link={
+            "https://etherscan.io/tx/0x44fd2b0837b442f50de025d8628998cac5cc648a45cf4f2c1b964c6878ac4a35"
+          }
+        />
       </div>
       <div className="flex flex-col items-center justify-center border-2 bg-fuchsia-500">
         <p className="mt-4 font-sans text-lg font-bold text-white">LINKS</p>
