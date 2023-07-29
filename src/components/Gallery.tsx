@@ -1,11 +1,12 @@
 import Image from "next/image";
 
+import sha256 from "crypto-js/sha256";
+
 export interface Meme {
   author: string;
   credit?: string;
   fileName: string;
 }
-
 const images: Meme[] = [
   {
     author: "admin",
@@ -62,6 +63,11 @@ const images: Meme[] = [
     fileName: "Julian_poster.jpg",
     credit: "https://twitter.com/incredulicious",
   },
+  {
+    author: "@GrahamKeithC",
+    fileName: "GrahamKeithC_DeathOfSOLANA.jpg",
+    credit: "https://twitter.com/GrahamKeithC",
+  },
 ];
 
 const Gallery = () => {
@@ -83,7 +89,10 @@ const Gallery = () => {
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3 ">
         {images.map((image, index) => (
           <div
-            className="relative aspect-square h-max w-full overflow-hidden hover:z-50 hover:overflow-visible"
+            style={{
+              borderColor: `#${sha256(image.author).toString().slice(0, 6)}`,
+            }}
+            className="relative aspect-square h-max w-full overflow-hidden border-4 hover:z-50 hover:overflow-visible"
             key={index}
           >
             <Image
@@ -95,7 +104,7 @@ const Gallery = () => {
             />
             <div className="relative z-30 flex h-full w-full flex-col justify-between bg-black/80 p-4 opacity-0 hover:opacity-100">
               <p>{image.fileName}</p>
-              <div className="space flex flex-col gap-2 bg-black/80">
+              <div className="space ga2p-2 flex flex-col bg-black/80">
                 <a
                   href={`/images/gallery/${image.fileName}`}
                   target="_blank"
