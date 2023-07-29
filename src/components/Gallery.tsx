@@ -68,6 +68,10 @@ const images: Meme[] = [
     fileName: "GrahamKeithC_DeathOfSOLANA.jpg",
     credit: "https://twitter.com/GrahamKeithC",
   },
+  {
+    author: "A",
+    fileName: "A_pinkCrash.jpg",
+  },
 ];
 
 const Gallery = () => {
