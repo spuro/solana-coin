@@ -72,6 +72,11 @@ const images: Meme[] = [
     author: "A",
     fileName: "A_pinkCrash.jpg",
   },
+  {
+    author: "0xzordan",
+    fileName: "0xzordan_nitro.jpeg",
+    credit: "https://twitter.com/0xzordan/status/1685287718190743552",
+  },
 ];
 
 const Gallery = () => {
