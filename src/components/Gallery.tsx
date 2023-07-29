@@ -53,6 +53,10 @@ const images: Meme[] = [
     author: "admin",
     fileName: "rabbit.jpeg",
   },
+  {
+    author: "admin",
+    fileName: "myStrangeAddiction.jpeg",
+  },
 ];
 
 const Gallery = () => {
