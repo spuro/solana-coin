@@ -57,6 +57,11 @@ const images: Meme[] = [
     author: "admin",
     fileName: "myStrangeAddiction.jpeg",
   },
+  {
+    author: "incredulicious",
+    fileName: "Julian_poster.jpg",
+    credit: "https://twitter.com/incredulicious",
+  },
 ];
 
 const Gallery = () => {
@@ -78,7 +83,7 @@ const Gallery = () => {
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3 ">
         {images.map((image, index) => (
           <div
-            className="relative aspect-square h-max w-full hover:z-50"
+            className="relative aspect-square h-max w-full overflow-hidden hover:z-50 hover:overflow-visible"
             key={index}
           >
             <Image
