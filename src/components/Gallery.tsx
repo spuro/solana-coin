@@ -60,7 +60,7 @@ const images: Meme[] = [
   },
   {
     author: "incredulicious",
-    fileName: "Julian_poster.jpg",
+    fileName: "incredulicious_poster.jpg",
     credit: "https://twitter.com/incredulicious",
   },
   {
@@ -76,6 +76,11 @@ const images: Meme[] = [
     author: "0xzordan",
     fileName: "0xzordan_nitro.jpeg",
     credit: "https://twitter.com/0xzordan/status/1685287718190743552",
+  },
+  {
+    author: "incredulicious",
+    fileName: "incredulicious_GetInBitch.jpeg",
+    credit: "https://twitter.com/incredulicious/status/1685470568617816064/",
   },
 ];
 
