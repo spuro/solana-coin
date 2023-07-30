@@ -94,7 +94,7 @@ export default function Home() {
         >
           🎵
         </button>
-        <audio src={"/crash.mp3"} autoPlay loop ref={musicRef} />
+        <audio src={"/Barbie.mp3"} autoPlay loop ref={musicRef} />
         <div className="flex min-h-screen flex-col items-center justify-center lg:grid lg:grid-cols-[0.25fr_1fr_0.25fr]">
           <Sidebar />
           <div
