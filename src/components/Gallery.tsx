@@ -82,6 +82,31 @@ const images: Meme[] = [
     fileName: "incredulicious_GetInBitch.jpeg",
     credit: "https://twitter.com/incredulicious/status/1685470568617816064/",
   },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_Comparison.jpeg",
+    credit: "https://twitter.com/cambussyius/status/1685472337955606528?s=20",
+  },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_bestTech.jpeg",
+    credit: "https://twitter.com/cambussyius",
+  },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_bondage.jpeg",
+    credit: "https://twitter.com/cambussyius",
+  },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_eef.jpg",
+    credit: "https://twitter.com/cambussyius",
+  },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_solanaSisters.jpg",
+    credit: "https://twitter.com/cambussyius",
+  },
 ];
 
 const Gallery = () => {
