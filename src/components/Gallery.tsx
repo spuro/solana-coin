@@ -112,6 +112,11 @@ const images: Meme[] = [
     fileName: "@Ch3l__collage.jpg",
     credit: "https://twitter.com/Ch3l__/",
   },
+  {
+    author: "nikolaynft",
+    fileName: "nikolaynft_videogame.jpeg",
+    credit: "https://twitter.com/nikolaynft/status/1685626826238963712",
+  },
 ];
 
 const Gallery = () => {
