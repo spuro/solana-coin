@@ -107,6 +107,11 @@ const images: Meme[] = [
     fileName: "cambussyius_solanaSisters.jpg",
     credit: "https://twitter.com/cambussyius",
   },
+  {
+    author: "@Ch3l__",
+    fileName: "@Ch3l__collage.jpg",
+    credit: "https://twitter.com/Ch3l__/",
+  },
 ];
 
 const Gallery = () => {
