@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Confession = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div id="Confession" className="flex flex-col items-center">
       <h3 className="text-center text-3xl font-bold underline">
         What is an underdog?
       </h3>

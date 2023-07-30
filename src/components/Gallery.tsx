@@ -117,11 +117,16 @@ const images: Meme[] = [
     fileName: "nikolaynft_videogame.jpeg",
     credit: "https://twitter.com/nikolaynft/status/1685626826238963712",
   },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_barbieGun.jpeg",
+    credit: "https://twitter.com/cambussyius",
+  },
 ];
 
 const Gallery = () => {
   return (
-    <div className="w-full">
+    <div id="Gallery" className="w-full">
       <h2 className="border-4 border-orange-500 bg-teal-900 text-center text-xl md:text-5xl">
         meme <span className="italic">Gallery</span>
       </h2>
@@ -141,7 +146,7 @@ const Gallery = () => {
             style={{
               borderColor: `#${sha256(image.author).toString().slice(0, 6)}`,
             }}
-            className="relative aspect-square h-max w-full overflow-hidden border-4 hover:z-50 hover:overflow-visible"
+            className="relative aspect-square h-max w-full overflow-hidden border-4 hover:z-40 hover:overflow-visible"
             key={index}
           >
             <Image

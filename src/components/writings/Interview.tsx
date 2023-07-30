@@ -1,6 +1,7 @@
 export const Interview = () => {
   return (
     <div className="capitalize">
+      <h3 className="bg-red-800 p-4 text-xl font-bold">The Interview</h3>
       <p>
         <strong>SAM BANKMAN-FWIED:</strong> Fankies fow having me. At the end of
         the day, I was C.E.O. of FTX, and that means whatevew happened, why evew

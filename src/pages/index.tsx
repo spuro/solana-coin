@@ -9,7 +9,8 @@ import localFont from "next/font/local";
 // my components
 import { Sidebar } from "~/components/sidebar";
 import { InfoHeader } from "~/components/InfoHeader";
-import { Interview } from "~/components/Interview";
+import Writings from "~/components/Writings";
+import MenuButton from "~/components/MenuButton";
 import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
 import WidgetCentre from "~/components/WidgetCentre";
@@ -79,13 +80,18 @@ export default function Home() {
         />
         <link rel="icon" href="/images/logo.jpg" />
       </Head>
-      <main className="text-white" style={{ fontFamily: "serif" }}>
+      <main
+        id="Home"
+        className="relative text-white"
+        style={{ fontFamily: "serif" }}
+      >
         <button
           onClick={muteMusic}
           className="fixed bottom-4 left-4 z-20 rounded-full border-2 bg-teal-500 p-4 text-black"
         >
           🔈
         </button>
+        <MenuButton />
         <button
           onClick={() => {
             musicRef.current ? void musicRef.current.play() : null;
@@ -133,7 +139,7 @@ export default function Home() {
               />
               <Confession />
               <Gallery />
-              <Interview />
+              <Writings />
               {/* <WidgetCentre /> */}
               {/* <Image
                 src={"/images/applecat.gif"}
