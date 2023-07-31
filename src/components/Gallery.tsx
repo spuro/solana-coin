@@ -122,6 +122,11 @@ const images: Meme[] = [
     fileName: "cambussyius_barbieGun.jpeg",
     credit: "https://twitter.com/cambussyius",
   },
+  {
+    author: "lessbelief",
+    fileName: "lessbelief_theWorldIsYours.jpeg",
+    credit: "https://twitter.com/lessbelief/status/1685927172706643969",
+  },
 ];
 
 const Gallery = () => {
