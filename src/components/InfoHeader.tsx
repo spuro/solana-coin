@@ -63,9 +63,9 @@ export const InfoHeader = () => {
         />
         <InfoPair
           label="LP?"
-          value="LOCKED"
+          value="BURNED"
           link={
-            "https://etherscan.io/tx/0x44fd2b0837b442f50de025d8628998cac5cc648a45cf4f2c1b964c6878ac4a35"
+            "https://app.uncx.network/amm/uni-v2/pair/0x41F50f520f5095fC8403DF083285232B822611c3"
           }
         />
       </div>
