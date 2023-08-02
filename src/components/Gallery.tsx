@@ -127,6 +127,10 @@ const images: Meme[] = [
     fileName: "lessbelief_theWorldIsYours.jpeg",
     credit: "https://twitter.com/lessbelief/status/1685927172706643969",
   },
+  {
+    author: "admin",
+    fileName: "rfk_sisyphus.jpeg",
+  },
 ];
 
 const Gallery = () => {
