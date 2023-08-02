@@ -18,7 +18,9 @@ const Writings = () => {
           </p>
           <p
             onClick={() => {
-              navigator.clipboard.writeText("tickersolanawritings@proton.me");
+              void navigator.clipboard.writeText(
+                "tickersolanawritings@proton.me"
+              );
               alert("Copied to clipboard!");
             }}
             className="cursor-pointer bg-orange-300 hover:text-red-800"
