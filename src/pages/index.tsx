@@ -13,7 +13,8 @@ import Writings from "~/components/Writings";
 import MenuButton from "~/components/MenuButton";
 import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
-import WidgetCentre from "~/components/WidgetCentre";
+// import WidgetCentre from "~/components/WidgetCentre";
+// import Viewing from "~/components/Viewing";
 
 const kabelFont = localFont({ src: "../../src/fonts/kabel_norm.ttf" });
 
@@ -120,7 +121,7 @@ export default function Home() {
               height={400}
               className="mb-4"
             />
-            <div className="flex flex-col items-center gap-16">
+            <div className="flex flex-col items-center gap-16 pb-16">
               <h1
                 className={`max-w-full bg-gradient-to-r from-red-500 to-blue-500 font-mono text-lg font-bold shadow-lg shadow-green-300 hover:mix-blend-overlay md:text-4xl ${kabelFont.className}`}
               >
@@ -138,6 +139,7 @@ export default function Home() {
                 className="border-8 border-red-950 hover:animate-spin"
               />
               <Confession />
+              {/* <Viewing /> */}
               <Gallery />
               <Writings />
               {/* <WidgetCentre /> */}
