@@ -135,6 +135,10 @@ const images: Meme[] = [
     author: "admin",
     fileName: "tiny_party.jpeg",
   },
+  {
+    author: "admin",
+    fileName: "light_888.png",
+  },
 ];
 
 const Gallery = () => {
