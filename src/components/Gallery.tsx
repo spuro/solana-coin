@@ -139,6 +139,11 @@ const images: Meme[] = [
     author: "admin",
     fileName: "light_888.png",
   },
+  {
+    author: "jesusfigge",
+    fileName: "jesusfigge_techverygud.jpg",
+    credit: "https://twitter.com/jesusfigge/",
+  },
 ];
 
 const Gallery = () => {
