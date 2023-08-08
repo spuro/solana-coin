@@ -54,7 +54,7 @@ const MyComponent = () => {
             "linear-gradient(90deg, #0e5a3a, #150924), linear-gradient(0deg, rgba(252,159,203,0.2) 0%, rgba(248,176,73,0.2) 13%, rgba(248,176,73,0.2) 21%, rgba(254,231,242,0.2) 63%, rgba(249,82,160,0.2) 67%, rgba(197,8,73,0.2) 69%, rgba(180,62,133,0.2) 82%, rgba(248,176,73,0.2) 100%)",
           backgroundBlendMode: "overlay",
         }}
-        className={`flex w-full flex-col gap-4 p-4 pb-16 text-white lg:p-4 lg:pb-16 xl:p-4`}
+        className={`flex min-h-screen w-full flex-col gap-4 p-4 pb-16 text-white lg:p-4 lg:pb-16 xl:p-4`}
       >
         <a
           className="bg-teal-500 px-4 py-2 italic text-white hover:bg-teal-700"
