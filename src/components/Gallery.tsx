@@ -154,6 +154,11 @@ const images: Meme[] = [
     fileName: "cambussyius_barbiePoster.jpg",
     credit: "https://twitter.com/cambussyius",
   },
+  {
+    author: "tetsuo",
+    fileName: "tetsuo_microplastics.jpg",
+    credit: "https://twitter.com/RustInPeaceBozo",
+  },
 ];
 
 const Gallery = () => {
