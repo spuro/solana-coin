@@ -149,6 +149,11 @@ const images: Meme[] = [
     fileName: "jesusfigge_viper.png",
     credit: "https://twitter.com/jesusfigge/",
   },
+  {
+    author: "cambussyius",
+    fileName: "cambussyius_barbiePoster.jpg",
+    credit: "https://twitter.com/cambussyius",
+  },
 ];
 
 const Gallery = () => {
