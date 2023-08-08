@@ -1,9 +1,16 @@
 import React from "react";
 
-const ImagePreview = ({ file }) => {
+interface ImagePreviewProps {
+  file: File | null;
+}
+const ImagePreview = ({ file }: ImagePreviewProps) => {
   const url = file ? URL.createObjectURL(file) : null;
 
-  return <div>{url && <img src={url} alt="Preview" />}</div>;
+  return (
+    <div className="h-[100px] w-[100px]">
+      {url && <img src={url} alt="Preview" />}
+    </div>
+  );
 };
 
 export default ImagePreview;
