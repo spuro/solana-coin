@@ -13,6 +13,7 @@ import Writings from "~/components/Writings";
 import MenuButton from "~/components/MenuButton";
 import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
+import OverlayerPrompt from "~/components/OverlayerPrompt";
 // import WidgetCentre from "~/components/WidgetCentre";
 // import Viewing from "~/components/Viewing";
 
@@ -131,6 +132,7 @@ export default function Home() {
                 the ticker is $SOLANA
               </h3>
               <InfoHeader />
+              <OverlayerPrompt />
               <Image
                 src={"/images/logo.jpg"}
                 width={250}
