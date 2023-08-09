@@ -16,15 +16,19 @@ export interface Overlay {
 const overlays: Overlay[] = [
   {
     name: "Barbie",
-    src: "/images/overlays/overlay1.png",
+    src: "/images/overlays/Barbie.png",
   },
   {
     name: "Allegiance",
-    src: "/images/overlays/overlay2.png",
+    src: "/images/overlays/Allegiance.png",
   },
   {
     name: "Crash Title",
-    src: "/images/overlays/overlay3.png",
+    src: "/images/overlays/Crash_Title.png",
+  },
+  {
+    name: "Camera",
+    src: "/images/overlays/Camera.png",
   },
 ];
 
