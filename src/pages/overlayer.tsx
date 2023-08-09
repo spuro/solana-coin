@@ -45,6 +45,7 @@ const MyComponent = () => {
     <>
       <Head>
         <title>$SOLANA - pfp & meme overlayer</title>
+        <link rel="icon" href="/images/logo.jpg" />
       </Head>
       <div
         style={{
