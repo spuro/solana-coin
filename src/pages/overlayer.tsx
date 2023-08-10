@@ -34,6 +34,18 @@ const overlays: Overlay[] = [
     name: "Momo",
     src: "/images/overlays/Momo.png",
   },
+  {
+    name: "Momo",
+    src: "/images/overlays/Momo.png",
+  },
+  {
+    name: "Momo",
+    src: "/images/overlays/Momo.png",
+  },
+  {
+    name: "Momo",
+    src: "/images/overlays/Momo.png",
+  },
 ];
 
 const MyComponent = () => {
@@ -81,7 +93,7 @@ const MyComponent = () => {
           <FileUpload onFileUpload={handleFileUpload} />
           <ImagePreview file={file} />
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-4 lg:flex-row">
+        <div className="flex w-full flex-col items-start justify-center gap-4 lg:flex-row">
           <ResultPreview
             file={file}
             overlay={selectedOverlay}
