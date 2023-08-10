@@ -30,6 +30,10 @@ const overlays: Overlay[] = [
     name: "Camera",
     src: "/images/overlays/Camera.png",
   },
+  {
+    name: "Momo",
+    src: "/images/overlays/Momo.png",
+  },
 ];
 
 const MyComponent = () => {
