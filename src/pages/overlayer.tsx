@@ -34,18 +34,6 @@ const overlays: Overlay[] = [
     name: "Momo",
     src: "/images/overlays/Momo.png",
   },
-  {
-    name: "Momo",
-    src: "/images/overlays/Momo.png",
-  },
-  {
-    name: "Momo",
-    src: "/images/overlays/Momo.png",
-  },
-  {
-    name: "Momo",
-    src: "/images/overlays/Momo.png",
-  },
 ];
 
 const MyComponent = () => {
