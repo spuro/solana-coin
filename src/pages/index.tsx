@@ -129,7 +129,7 @@ export default function Home() {
                 BarbieCrashBandicootRFK888Inu
               </h1>
               <h3 className="bg-gradient-to-bl from-fuchsia-400 to-green-800 text-lg font-bold shadow-2xl shadow-red-200 hover:mix-blend-overlay">
-                the ticker is $SOLANA
+                the ticker is $SOLANA!
               </h3>
               <InfoHeader />
               <OverlayerPrompt />
