@@ -6,12 +6,14 @@ interface ResultPreviewProps {
   overlay: Overlay | null;
   showPfp: boolean;
   setShowPfp: (showPfp: boolean) => void;
+  setCropperActive: (cropperActive: boolean) => void;
 }
 const ResultPreview = ({
   file,
   overlay,
   showPfp,
   setShowPfp,
+  setCropperActive,
 }: ResultPreviewProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -34,9 +36,7 @@ const ResultPreview = ({
         // Check if the image is square or within 5% of being square
         const aspectRatio = img.width / img.height;
         if (aspectRatio < 0.95 || aspectRatio > 1.05) {
-          alert(
-            "Please upload an image that is square or within 5% of being square."
-          );
+          setCropperActive(true);
           return;
         }
 
@@ -82,7 +82,7 @@ const ResultPreview = ({
     <div className="relative flex flex-col items-center">
       <canvas
         ref={canvasRef}
-        className="relative left-0 top-0 aspect-square h-full max-h-[512px] w-full max-w-[512px]"
+        className="relative left-0 top-0 z-40 aspect-square h-full max-h-[512px] w-full max-w-[512px]"
       ></canvas>
       <p>preview will appear when both an image and overlay are chosen</p>
       <div className="flex flex-row gap-8">
