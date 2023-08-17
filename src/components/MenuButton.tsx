@@ -18,6 +18,10 @@ const entries = [
     link: "#Confession",
   },
   {
+    title: "Ceremony",
+    link: "#Ceremony",
+  },
+  {
     title: "Meme Gallery",
     link: "#Gallery",
   },

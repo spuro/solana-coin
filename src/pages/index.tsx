@@ -14,6 +14,7 @@ import MenuButton from "~/components/MenuButton";
 import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
 import OverlayerPrompt from "~/components/OverlayerPrompt";
+import Ceremony from "~/components/Ceremony";
 // import WidgetCentre from "~/components/WidgetCentre";
 // import Viewing from "~/components/Viewing";
 
@@ -141,6 +142,7 @@ export default function Home() {
                 className="border-8 border-red-950 hover:animate-spin"
               />
               <Confession />
+              <Ceremony />
               {/* <Viewing /> */}
               <Gallery />
               <Writings />
