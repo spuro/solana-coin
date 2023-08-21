@@ -5,7 +5,6 @@ import OverlaySelection from "~/components/overlayer/OverlaySelection";
 import ResultPreview from "~/components/overlayer/ResultPreview";
 import localFont from "next/font/local";
 import Head from "next/head";
-import ImageCropper from "~/components/overlayer/ImageCropper";
 
 const kabelFont = localFont({ src: "../../src/fonts/kabel_norm.ttf" });
 
@@ -49,7 +48,6 @@ const MyComponent = () => {
   const [file, setFile] = useState<File | null>(null);
   const [selectedOverlay, setSelectedOverlay] = useState<Overlay | null>(null);
   const [showPfp, setShowPfp] = useState<boolean>(false);
-  const [cropperActive, setCropperActive] = useState<boolean>(false);
 
   const handleFileUpload = (uploadedFile: File) => {
     setFile(uploadedFile);
@@ -75,16 +73,6 @@ const MyComponent = () => {
         }}
         className={`flex min-h-screen w-full flex-col gap-4 p-4 pb-16 text-white lg:p-4 lg:pb-16 xl:p-4`}
       >
-        <div
-          style={{ display: cropperActive ? "block" : "none" }}
-          className="fixed z-50 flex h-screen w-screen flex-col items-center justify-center"
-        >
-          <ImageCropper
-            inputFile={file}
-            onCropped={(_file: File | null) => setFile(_file)}
-            setCropperActive={setCropperActive}
-          />
-        </div>
         <a
           className="bg-teal-500 px-4 py-2 italic text-white hover:bg-teal-700"
           href="/"
@@ -107,7 +95,6 @@ const MyComponent = () => {
             overlay={selectedOverlay}
             showPfp={showPfp}
             setShowPfp={setShowPfp}
-            setCropperActive={setCropperActive}
           />
           <OverlaySelection
             overlays={overlays}
