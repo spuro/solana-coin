@@ -33,12 +33,6 @@ const ResultPreview = ({
       img.onload = () => {
         // Check if the image is square or within 5% of being square
         const aspectRatio = img.width / img.height;
-        if (aspectRatio < 0.95 || aspectRatio > 1.05) {
-          alert(
-            "Please upload an image that is square or within 5% of being square."
-          );
-          return;
-        }
 
         // Scale the canvas to the image size
         canvas!.width = img.width;
