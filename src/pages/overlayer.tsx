@@ -42,6 +42,10 @@ const overlays: Overlay[] = [
     name: "Wen",
     src: "/images/overlays/Wen.png",
   },
+  {
+    name: "I GOT COOTED",
+    src: "/images/overlays/I_GOT_COOTED.png",
+  },
 ];
 
 const MyComponent = () => {
