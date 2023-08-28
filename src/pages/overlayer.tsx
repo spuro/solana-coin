@@ -15,10 +15,6 @@ export interface Overlay {
 
 const overlays: Overlay[] = [
   {
-    name: "I GOT COOTED",
-    src: "/images/overlays/I_GOT_COOTED.png",
-  },
-  {
     name: "Barbie",
     src: "/images/overlays/Barbie.png",
   },
