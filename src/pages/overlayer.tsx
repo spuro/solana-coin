@@ -15,24 +15,16 @@ export interface Overlay {
 
 const overlays: Overlay[] = [
   {
+    name: "I GOT COOTED",
+    src: "/images/overlays/I_GOT_COOTED.png",
+  },
+  {
     name: "Barbie",
     src: "/images/overlays/Barbie.png",
   },
   {
-    name: "Allegiance",
-    src: "/images/overlays/Allegiance.png",
-  },
-  {
     name: "Crash Title",
     src: "/images/overlays/Crash_Title.png",
-  },
-  {
-    name: "Camera",
-    src: "/images/overlays/Camera.png",
-  },
-  {
-    name: "Momo",
-    src: "/images/overlays/Momo.png",
   },
   {
     name: "Mao 888",
@@ -41,6 +33,18 @@ const overlays: Overlay[] = [
   {
     name: "Wen",
     src: "/images/overlays/Wen.png",
+  },
+  {
+    name: "Allegiance",
+    src: "/images/overlays/Allegiance.png",
+  },
+  {
+    name: "Camera",
+    src: "/images/overlays/Camera.png",
+  },
+  {
+    name: "Momo",
+    src: "/images/overlays/Momo.png",
   },
 ];
 
