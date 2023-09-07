@@ -159,6 +159,14 @@ const images: Meme[] = [
     fileName: "tetsuo_microplastics.jpg",
     credit: "https://twitter.com/RustInPeaceBozo",
   },
+  {
+    author: "admin",
+    fileName: "flip_more.png",
+  },
+  {
+    author: "admin",
+    fileName: "flipping.png",
+  },
 ];
 
 const Gallery = () => {

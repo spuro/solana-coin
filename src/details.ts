@@ -26,5 +26,6 @@ export const links = {
     telegramLink: "https://t.me/SOLANAPORTALRFK",
     uniswapLink:
       "https://app.uniswap.org/#/swap?outputCurrency=0x3D806324b6Df5AF3c1a81aCbA14A8A62Fe6D643F",
+    scatterLink: "https://www.scatter.art/bandicoot-manlets?tab=mint",
   },
 };

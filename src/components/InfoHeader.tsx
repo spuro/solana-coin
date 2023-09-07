@@ -119,6 +119,14 @@ export const InfoHeader = () => {
           >
             <DexScreenerLogo />
           </a>
+          <a href={links.links.scatterLink} target="_blank" rel="noreferrer">
+            <Image
+              src={"/images/scatterLogo.png"}
+              height={50}
+              width={50}
+              alt="scatter link"
+            />
+          </a>
         </div>
       </div>
     </div>
