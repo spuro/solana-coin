@@ -15,6 +15,7 @@ import { Confession } from "~/components/Confession";
 import Gallery from "~/components/Gallery";
 import OverlayerPrompt from "~/components/OverlayerPrompt";
 import Ceremony from "~/components/Ceremony";
+import CootAd from "~/components/CootAd";
 // import WidgetCentre from "~/components/WidgetCentre";
 // import Viewing from "~/components/Viewing";
 
@@ -133,6 +134,7 @@ export default function Home() {
                 the ticker is $SOLANA!
               </h3>
               <InfoHeader />
+              <CootAd />
               <OverlayerPrompt />
               <Image
                 src={"/images/logo.jpg"}
