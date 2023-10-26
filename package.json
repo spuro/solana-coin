@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@prisma/client": "^5.4.1",
     "@t3-oss/env-nextjs": "^0.3.1",
     "@types/crypto-js": "^4.1.1",
     "crypto-js": "^4.1.1",
