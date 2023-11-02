@@ -157,6 +157,7 @@ export default function Home() {
                 className="hover:animate-spin"
               /> */}
             </div>
+            <div>$SOLANA is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment purposes only.</div>
           </div>
           <Sidebar />
         </div>
