@@ -54,6 +54,10 @@ const overlays: Overlay[] = [
     name: "Momo",
     src: "/images/overlays/Momo.png",
   },
+  {
+    name: "SolanaOnEthereum",
+    src: "/images/overlays/SolanaOnEthereum.png",
+  }
 ];
 
 const MyComponent = () => {
