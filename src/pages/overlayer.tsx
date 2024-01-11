@@ -57,6 +57,10 @@ const overlays: Overlay[] = [
   {
     name: "SolanaOnEthereum",
     src: "/images/overlays/SolanaOnEthereum.png",
+  },
+  {
+    name: "SolanaFone",
+    src: "/images/overlays/SolanaFone.png",
   }
 ];
 
