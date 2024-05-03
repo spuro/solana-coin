@@ -65,7 +65,7 @@ export const InfoHeader = () => {
           label="LP?"
           value="BURNED"
           link={
-            "https://app.uncx.network/amm/uni-v2/pair/0x41F50f520f5095fC8403DF083285232B822611c3"
+            "https://gopluslabs.io/token-security/1/0x3D806324b6Df5AF3c1a81aCbA14A8A62Fe6D643F"
           }
         />
       </div>
